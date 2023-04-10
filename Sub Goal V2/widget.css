@@ -1,0 +1,11 @@
+.goalText {
+  font:  {{fontName}};
+  color: {{color}};
+  font-size: {{size}}px;
+  
+}
+
+.main-container {
+ 	text-align: {{align}};
+  	font-weight: bold;
+}

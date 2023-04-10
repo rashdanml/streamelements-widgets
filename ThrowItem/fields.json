@@ -1,0 +1,119 @@
+{
+  "commandsTrigger": {
+    "type": "text",
+    "label": "Command",
+    "value": "!throw,!throwitem",
+    "group":"Settings"
+  },
+  "startAt": {
+    "type": "text",
+    "label": "Starting position (x,y)",
+    "value": "960,150",
+    "group":"Settings"
+  },
+  "endAt": {
+    "type": "text",
+    "label": "Ending position (x,y)",
+    "value": "1700,700",
+    "group":"Settings"
+  },
+  "duration": {
+    "type": "text",
+    "label": "Duration (ms)",
+    "value": "1000",
+    "group":"Settings"
+  },
+  "delay": {
+    "type": "text",
+    "label": "Start Delay (ms)",
+    "value": "1000",
+    "group":"Settings"
+  },
+  "dataJSON": {
+    "type": "text",
+    "label": "JSON Data",
+    "value": "",
+    "group":"Settings"
+  },
+  "targetImage": {
+    "type": "image-input",
+    "label": "Target Image",
+    "group":"Settings"
+  },
+  "fontName": {
+    "type": "googleFont",
+    "label": "Select a font:",
+    "value": "Roboto",
+    "group":"Styles"
+  },
+  "align": {
+    "type": "dropdown",
+    "label": "Text Alignment:",
+    "value": "left",
+    "options": {
+      "left": "Left",
+      "right": "Right",
+      "center": "Center"
+    },
+    "group":"Styles"
+  },
+  "path": {
+    "type": "text",
+    "label": "SVG Path (Don't Touch!)",
+    "value": "",
+    "group":"Generated"
+  },
+    "imageUrl": {
+    "type": "text",
+    "label": "Image URL (Don't Touch!)",
+    "value": "",
+    "group":"Generated"
+  },
+  "endX": {
+    "type": "text",
+    "label": "EndX (Don't Touch!)",
+    "value": "",
+    "group":"Generated"
+  },
+  "endY": {
+    "type": "text",
+    "label": "EndY (Don't Touch!)",
+    "value": "",
+    "group":"Generated"
+  },
+  "Author": {
+    "type": "hidden",
+    "label": "Widget created by RashdanML",
+    "group": "Credentials"
+  },
+  "SocialMedia": {
+    "type": "hidden",
+    "label": "▬▬▬▬▬ Social Medias ▬▬▬▬▬",
+    "group": "Credentials"
+  },
+  "Twitter": {
+    "type": "hidden",
+    "label": "https://twitter.com/rashdanml",
+    "group": "Credentials"
+  },
+  "Twitch": {
+    "type": "hidden",
+    "label": "https://twitch.tv/rashdanml",
+    "group": "Credentials"
+  },  
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "RashdanML",
+    "group": "Credentials"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "ThrowItem 1.0",
+    "group": "Credentials"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0",
+    "group": "Credentials"
+  }
+}

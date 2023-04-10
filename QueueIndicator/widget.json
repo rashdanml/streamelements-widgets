@@ -1,0 +1,104 @@
+{
+  "priButton": {
+    "type": "button",
+    "label": "Toggle Priority On/Off",
+    "value": "Priority"
+  },
+  "liveButton": {
+    "type": "button",
+    "label": "Toggle Live Learns On/Off",
+    "value": "Live"
+  },
+  "allButton": {
+    "type": "button",
+    "label": "Toggle Both On/Off",
+    "value": "Both"    
+  },
+  "broadcaster": {
+    "type": "text",
+    "label": "Broadcaster",
+    "value": "andythefrenchy",
+    "group":"Settings"
+  },
+    "commandsPri": {
+    "type": "text",
+    "label": "Toggle Priority Requests on/off",
+    "value": "!pri",
+    "group":"Settings"
+  },
+    "commandsLive": {
+    "type": "text",
+    "label": "Toggle Live Learns on/off",
+    "value": "!live",
+    "group":"Settings"
+  },
+    "commandsAll": {
+    "type": "text",
+    "label": "Toggle All (Priority/Live learn) on/off",
+    "value": "!all",
+    "group":"Settings"
+  },
+  "fontName": {
+      "type": "googleFont",
+      "label": "Select a font:",
+      "value": "Roboto",
+      "group":"Styles"
+    },
+  "color": {
+    "type": "colorpicker",
+    "label": "Color",
+    "value": "#0000FF",
+    "group":"Styles"
+  },
+	"size": {
+      "type": "slider",
+      "label": "Font size (px)",
+      "value": 10,
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "group":"Styles"
+  },
+  "align": {
+    "type": "dropdown",
+    "label": "Text Alignment:",
+    "value": "left",
+    "options": {
+      "left": "Left",
+      "right": "Right",
+      "center": "Center"
+    },
+    "group":"Styles"
+  },
+  "Author": {
+    "type": "hidden",
+    "label": "Widget created by RashdanML",
+    "group": "Credentials"
+  },
+  "Twitter": {
+    "type": "hidden",
+    "label": "https://twitter.com/rashdanml",
+    "group": "Credentials"
+  },
+  "Twitch": {
+    "type": "hidden",
+    "label": "https://twitch.tv/rashdanml",
+    "group": "Credentials"
+  },  
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "RashdanML",
+    "group": "Credentials"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "Requests Indicator",
+    "group": "Credentials"
+  }
+  ,
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0",
+    "group": "Credentials"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "broadcaster": {
+    "type": "text",
+    "label": "Broadcaster",
+    "value": "andythefrenchy",
+    "group":"Settings"
+  },
+    "titleText": {
+    "type": "text",
+    "label": "Title Text",
+    "value": "Sub Goal:",
+    "group":"Settings"
+  },
+    "commandsTrigger": {
+    "type": "text",
+    "label": "Command (Edit Goal)",
+    "value": "!subgoal",
+    "group":"Settings"
+  },
+    "subGoal": {
+    "type": "text",
+    "label": "Starting Goal",
+    "value": 69,
+    "group":"Settings"
+  },
+  "autoIncrement": {
+    "type": "checkbox",
+    "label":"Enable Auto-Increment",
+    "group":"Settings"
+  },
+    "subGoalIncrement": {
+    "type": "text",
+    "label": "Increment Sub Goal by",
+    "value": 100,
+    "group":"Settings"
+  },
+  "subCurrentTest": {
+    "type": "text",
+    "label": "Current Subs Tester",
+    "value": 1,
+    "group":"Settings"
+  },
+  "fontName": {
+    "type": "googleFont",
+    "label": "Select a font:",
+    "value": "Roboto",
+    "group":"Styles"
+  },
+  "color": {
+    "type": "colorpicker",
+    "label": "Color",
+    "value": "#0000FF",
+    "group":"Styles"
+  },
+	"size": {
+      "type": "slider",
+      "label": "Font size (px)",
+      "value": 10,
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "group":"Styles"
+  },
+  "align": {
+    "type": "dropdown",
+    "label": "Text Alignment:",
+    "value": "left",
+    "options": {
+      "left": "Left",
+      "right": "Right",
+      "center": "Center"
+    },
+    "group":"Styles"
+  },
+  "Author": {
+    "type": "hidden",
+    "label": "Widget created by RashdanML",
+    "group": "Credentials"
+  },
+  "SocialMedia": {
+    "type": "hidden",
+    "label": "▬▬▬▬▬ Social Medias ▬▬▬▬▬",
+    "group": "Credentials"
+  },
+  "Twitter": {
+    "type": "hidden",
+    "label": "https://twitter.com/rashdanml",
+    "group": "Credentials"
+  },
+  "Twitch": {
+    "type": "hidden",
+    "label": "https://twitch.tv/rashdanml",
+    "group": "Credentials"
+  },  
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "RashdanML",
+    "group": "Credentials"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "Requests Indicator",
+    "group": "Credentials"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0",
+    "group": "Credentials"
+  }
+}

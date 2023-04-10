@@ -1,0 +1,81 @@
+.motion {
+  offset-path: path("{{path}}");
+  animation: move {{duration}}ms infinite forwards ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay:{{delay}}ms;
+  width:100px;
+  height:auto;
+  position:absolute;
+}
+
+.motion img {
+  width:100%;
+  height:auto;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+    transform: scale(0.5);
+    opacity:1;
+  }
+  33% {
+   	offset-distance:99%;
+    transform: scale(2.99);
+    opacity:1;
+  }
+  99% {
+   	offset-distance:99%;
+    transform: scale(2.99);
+    opacity:1;
+  }
+  100% {
+    offset-distance: 100%;
+    transform: scale(3.0);
+    opacity:0;
+  }
+}
+
+.curve {
+ 	position:absolute;
+  	top:50;
+  	left:50;
+}
+
+.thrower {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+}
+
+.item {
+  
+}
+
+.target {
+  animation: hide calc({{delay}}ms + {{duration}}ms) infinite forwards ease-in-out;
+  animation-iteration-count: 1;
+  content: url({{targetImage}});
+  transform: translate(-100px,0);
+  display: inline-block;
+  position:absolute;
+  top:700px;
+  left:1330px;
+}
+
+@keyframes hide {
+  0% {
+    opacity:0;
+  }
+  5% {
+    opacity:1;
+  }
+  99% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}

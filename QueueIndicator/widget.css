@@ -1,0 +1,40 @@
+.free, .priority, .live {
+  	font-size: {{size}}px;
+ 	line-height: 1.1;
+    display: flex;
+    justify-content:{{align}};
+  	align-items:center;
+  	margin:0;
+  	margin-bottom:5px;
+  	padding:0;
+}
+
+.main-container {
+  	font-weight: bold;
+    font:  {{fontName}};
+  	color: {{color}};
+}
+
+.dotRed {
+  height: calc({{size}}px - 4px);
+  width: calc({{size}}px - 4px);
+  margin-left: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  outline: solid;
+  outline-color: white;
+  outline-width: 3px;
+}
+
+.dotGreen {
+  height: calc({{size}}px - 4px);
+  width: calc({{size}}px - 4px);
+  margin-left: 10px;
+  background-color: #39FF14;
+  border-radius: 50%;
+  display: inline-block;
+  outline: solid;
+  outline-color: white;
+  outline-width: 3px;
+}

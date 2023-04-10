@@ -1,0 +1,38 @@
+{
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "RashdanML"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "StreamerSonglist Current Song"
+  },
+  "fontName": {
+      "type": "googleFont",
+      "label": "Select a font:",
+      "value": "Roboto"
+    },
+  "color": {
+    "type": "colorpicker",
+    "label": "Color",
+    "value": "#0000FF"
+  },
+  "broadcaster": {
+    "type": "text",
+    "label": "Broadcaster",
+    "value": "andythefrenchy"
+  },
+    "currency_symbol": {
+    "type": "text",
+    "label": "Currency Symbol",
+    "value": "$"
+  },
+	"interval": {
+      "type": "slider",
+      "label": "Update interval (seconds)",
+      "value": 10,
+      "min": 0,
+      "max": 15,
+      "step": 1
+  }
+}
