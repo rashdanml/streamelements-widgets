@@ -26,19 +26,19 @@
   "autoIncrement": {
     "type": "checkbox",
     "label":"Enable Auto-Increment",
-    "group":"Settings"
+    "group":"Auto Incremement"
   },
     "subGoalIncrement": {
     "type": "text",
     "label": "Increment Sub Goal by",
     "value": 100,
-    "group":"Settings"
+    "group":"Auto Incremement"
   },
   "subCurrentTest": {
     "type": "text",
     "label": "Current Subs Tester",
     "value": 1,
-    "group":"Settings"
+    "group":"Testing (Don't Touch)"
   },
   "fontName": {
     "type": "googleFont",
