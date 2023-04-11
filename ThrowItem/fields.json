@@ -1,4 +1,10 @@
 {
+  "broadcaster": {
+    "type": "text",
+    "label": "Broadcaster",
+    "value": "julie",
+    "group":"Settings"
+  },
   "commandsTrigger": {
     "type": "text",
     "label": "Command",

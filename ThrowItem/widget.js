@@ -15,6 +15,7 @@ function reset_animation() {
 window.addEventListener('onWidgetLoad', function (obj) {
     fieldData = obj["detail"]["fieldData"];
   	commandsTrigger = fieldData["commandsTrigger"].split(",");
+  	broadcaster = fieldData["broadcaster];
   	duration = Number(fieldData["duration"]);
   	start = fieldData["startAt"].split(",");
   	end = fieldData["endAt"].split(",");
@@ -45,7 +46,7 @@ window.addEventListener('onEventReceived', function (obj) {
   	const event = obj.detail.event;
   
   	if (listener == "message") {
-       	if ( (event.data.nick == "streamelements") && event.data.text.includes("threw")) {
+       	if ( (event.data.nick == "streamelements" || event.data.nick == broadcaster ) && event.data.text.includes("threw")) {
         	text = event.data.text.split(" threw ");
           	item = text[1].split(" at ");
           	
