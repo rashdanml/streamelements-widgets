@@ -15,7 +15,7 @@ function reset_animation() {
 window.addEventListener('onWidgetLoad', function (obj) {
     fieldData = obj["detail"]["fieldData"];
   	commandsTrigger = fieldData["commandsTrigger"].split(",");
-  	broadcaster = fieldData["broadcaster];
+  	broadcaster = fieldData["broadcaster"];
   	duration = Number(fieldData["duration"]);
   	start = fieldData["startAt"].split(",");
   	end = fieldData["endAt"].split(",");
