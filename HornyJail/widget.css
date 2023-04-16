@@ -14,13 +14,13 @@
   
   .jail {
     animation: drop calc({{duration}}ms) infinite forwards ease-in-out;
-        animation-iteration-count:1;
-        animation-delay: calc(2*{{delay}}ms);
-        display:inline-block;
-        position:absolute;
-        width: 900px;
-        top: -1000px;
-        left: 900px;
+    animation-iteration-count:1;
+    animation-delay: calc(2*{{delay}}ms);
+    display:inline-block;
+    position:absolute;
+    width: 900px;
+    top: -1000px;
+    left: 900px;
   }
   
   .jail img {
@@ -69,8 +69,8 @@
   
   @keyframes drop {
     0% {
-         top:-1000px; 
-      opacity:1;
+        top:-1000px; 
+        opacity:1;
     }
     33% { top:550px; opacity:1; }
     99% { opacity:1; top:550px; }
