@@ -4,12 +4,30 @@ function getRandom (min, max) {
   return Math.random() * (Number(max) - Number(min)) + Number(min);
 }
 
-function reset_animation() {
+function reset_jail() {
   // Reset Animation
-  var el = document.getElementByClassName('throw');
+  var el = document.getElementById('jail');
   el.style.animation = 'none';
   el.offsetHeight; /* trigger reflow */
   el.style.animation = null; 
+}
+
+function reset_jailee() {
+  // Reset Animation
+  var el = document.getElementById('jailee');
+  el.style.animation = 'none';
+  el.offsetHeight; /* trigger reflow */
+  el.style.animation = null; 
+}
+
+function setImageUrl () {
+  	$.ajax({
+      url: profileUrl + jailee,
+      type: 'GET',
+      data: {},
+      success: function (data) { $('#jailee').attr("src",data); },
+      error: function (jqXHR, textStatus, errorThrown) {},
+    });
 }
 
 window.addEventListener('onWidgetLoad', function (obj) {
@@ -19,6 +37,7 @@ window.addEventListener('onWidgetLoad', function (obj) {
   	duration = Number(fieldData["duration"]);
   	start = fieldData["startAt"].split(",");
   	end = fieldData["endAt"].split(",");
+  	profileUrl = fieldData["profileUrl"];
   
   	path = fieldData["path"];
   
@@ -49,20 +68,25 @@ window.addEventListener('onEventReceived', function (obj) {
           	
           	// determine thrower (user of command), receiver (@username), thrown items from chat response
           	command = text[0];
-          	//$('.main-container').html(thrower + "," + item + "," + receiver);
-          
+         
+            if (text[1]) {
+              //$('.main-container').html(jailee);
+              jailee = text[1];
+              setImageUrl();
+            }
+            else {	
+              //$('.main-container').html(event.data.nick);
+              jailee = broadcaster;
+              setImageUrl();
+            }
+
           	if (commandsTrigger.includes(command)) {
                 // randomize curvature of path
                 curveBy = "Q" + getRandom(start.x,end.x) + "," + getRandom(start.y,end.y);
-                path = startAt+curveBy+endAt;
-                SE_API.setField("path", path);
-
-                //$('.curve').html(data[item])        	
-
-                setTimeout(reset_animation, 500);
-
-                //$("div#item").addClass("motion")
-                //$('.motion-demo').toggle();
+                path = 'path("'+startAt+curveBy+endAt+'")';
+              	
+                setTimeout(reset_jail(),500);
+              	setTimeout(reset_jailee(),500);
             }
         }
     }

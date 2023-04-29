@@ -1,89 +1,95 @@
 {
-    "broadcaster": {
-      "type": "text",
-      "label": "Broadcaster",
-      "value": "julie",
-      "group":"Settings"
-    },
-    "commandsTrigger": {
-      "type": "text",
-      "label": "Command",
-      "value": "!throw,!throwitem",
-      "group":"Settings"
-    },
-    "startAt": {
-      "type": "text",
-      "label": "Starting position (x,y)",
-      "value": "960,150",
-      "group":"Settings"
-    },
-    "endAt": {
-      "type": "text",
-      "label": "Ending position (x,y)",
-      "value": "1700,700",
-      "group":"Settings"
-    },
-    "duration": {
-      "type": "text",
-      "label": "Duration (ms)",
-      "value": "1000",
-      "group":"Settings"
-    },
-    "delay": {
-      "type": "text",
-      "label": "Start Delay (ms)",
-      "value": "1000",
-      "group":"Settings"
-    },
-    "targetImage": {
-      "type": "image-input",
-      "label": "Target Image",
-      "group":"Settings"
-    },
-    "jailImage": {
-      "type": "image-input",
-      "label": "Jail Cell Image",
-      "group":"Settings"
-    },
-    "path": {
-      "type": "text",
-      "label": "SVG Path (Don't Touch!)",
-      "value": "",
-      "group":"Generated"
-    },
-    "Author": {
-      "type": "hidden",
-      "label": "Widget created by RashdanML",
-      "group": "Credentials"
-    },
-    "SocialMedia": {
-      "type": "hidden",
-      "label": "▬▬▬▬▬ Social Medias ▬▬▬▬▬",
-      "group": "Credentials"
-    },
-    "Twitter": {
-      "type": "hidden",
-      "label": "https://twitter.com/rashdanml",
-      "group": "Credentials"
-    },
-    "Twitch": {
-      "type": "hidden",
-      "label": "https://twitch.tv/rashdanml",
-      "group": "Credentials"
-    },  
-    "widgetAuthor": {
-      "type": "hidden",
-      "value": "RashdanML",
-      "group": "Credentials"
-    },
-    "widgetName": {
-      "type": "hidden",
-      "value": "HornyJail 1.0",
-      "group": "Credentials"
-    },
-    "widgetVersion": {
-      "type": "hidden",
-      "value": "1.0",
-      "group": "Credentials"
-    }
+  "broadcaster": {
+    "type": "text",
+    "label": "Broadcaster",
+    "value": "julie",
+    "group":"Settings"
+  },
+  "commandsTrigger": {
+    "type": "text",
+    "label": "Command",
+    "value": "!throw,!throwitem",
+    "group":"Settings"
+  },
+  "startAt": {
+    "type": "text",
+    "label": "Starting position (x,y)",
+    "value": "960,150",
+    "group":"Settings"
+  },
+  "endAt": {
+    "type": "text",
+    "label": "Ending position (x,y)",
+    "value": "1700,700",
+    "group":"Settings"
+  },
+  "duration": {
+    "type": "text",
+    "label": "Duration (ms)",
+    "value": "1000",
+    "group":"Settings"
+  },
+  "delay": {
+    "type": "text",
+    "label": "Start Delay (ms)",
+    "value": "1000",
+    "group":"Settings"
+  },
+  "profileUrl": {
+    "type": "text",
+    "label": "Profile Picture API endpoint",
+    "group":"Settings"
+  },
+  "jailImage": {
+    "type": "image-input",
+    "label": "Jail Cell Image",
+    "group":"Settings"
+  },
+  "path": {
+    "type": "text",
+    "label": "SVG Path (Don't Touch!)",
+    "value": "",
+    "group":"Generated"
+  },
+  "imageUrl": {
+    "type": "text",
+    "label": "Profile Image Url (Don't Touch)",
+    "value": "",
+    "group":"Generated"
+  },
+  "Author": {
+    "type": "hidden",
+    "label": "Widget created by RashdanML",
+    "group": "Credentials"
+  },
+  "SocialMedia": {
+    "type": "hidden",
+    "label": "▬▬▬▬▬ Social Medias ▬▬▬▬▬",
+    "group": "Credentials"
+  },
+  "Twitter": {
+    "type": "hidden",
+    "label": "https://twitter.com/rashdanml",
+    "group": "Credentials"
+  },
+  "Twitch": {
+    "type": "hidden",
+    "label": "https://twitch.tv/rashdanml",
+    "group": "Credentials"
+  },  
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "RashdanML",
+    "group": "Credentials"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "HornyJail 1.0",
+    "group": "Credentials"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0",
+    "group": "Credentials"
   }
+}

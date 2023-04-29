@@ -1,92 +1,96 @@
 .target {
-    offset-path: path("{{path}}");
+  offset-path: path("{{path}}");
+  offset-rotate:0deg;
+  animation: throw calc({{duration}}ms + 2*{{delay}}ms) infinite forwards ease-in-out;
+  animation-iteration-count:1;
+  display:inline-block;
+  position:absolute;  
+}
+
+#jailee {
+  height: auto;
+  width: 300px;
+  border-radius: 50%;
+  border-width:5px;
+  display: inline-block;
+  position:absolute;
+}
+
+#jail {
+  animation: drop calc({{duration}}ms) infinite forwards ease-in-out;
+  	animation-iteration-count:1;
+  	animation-delay: calc(2*{{delay}}ms);
+  	display:inline-block;
+  	position:absolute;
+	width:900px;
+  	top:-1000px;
+  	left:900px;
+}
+
+#jail img {
+  width:100%;
+  height:auto;
+}
+
+@keyframes throw {
+  0% {
+    offset-distance: 0%;
     offset-rotate:0deg;
-    animation: throw calc({{duration}}ms + 2*{{delay}}ms) infinite forwards ease-in-out;
-    animation-iteration-count:1;
-    display:inline-block;
-    position:absolute;
+    opacity:0;
+    transform: scale(0.05);
   }
-  
-  .target img {
-    width:100%;
-    height:auto;
+  1% { 
+    offset-distance: 0%;
+    offset-rotate:0deg;
+    opacity:1;
+    transform: scale(0.5);
   }
-  
-  .jail {
-    animation: drop calc({{duration}}ms) infinite forwards ease-in-out;
-    animation-iteration-count:1;
-    animation-delay: calc(2*{{delay}}ms);
-    display:inline-block;
-    position:absolute;
-    width: 900px;
-    top: -1000px;
-    left: 900px;
+  33% {
+   	offset-distance:100%;
+    offset-rotate:-90deg;
+    opacity:1;
+    transform: scale(1.0);
   }
-  
-  .jail img {
-    width:100%;
-    height:auto;
+  50% {
+   	offset-distance:100%;
+    offset-rotate:0deg;
+    opacity:1;
+    transform: scale(1.0);
   }
-  
-  @keyframes throw {
-    0% {
-      offset-distance: 0%;
-      offset-rotate:0deg;
-      opacity:0;
-      transform: scale(0.05);
-    }
-    1% { 
-      offset-distance: 0%;
-      offset-rotate:0deg;
-      opacity:1;
-      transform: scale(0.5);
-    }
-    33% {
-         offset-distance:100%;
-      offset-rotate:-90deg;
-      opacity:1;
-      transform: scale(1.0);
-    }
-    50% {
-         offset-distance:100%;
-      offset-rotate:0deg;
-      opacity:1;
-      transform: scale(1.0);
-    }
-    99% {
-      offset-distance: 100%;
-      offset-rotate:0deg;
-      opacity:0.99;
-      transform: scale(1.0);
-    }
-    100% {
-      offset-distance: 100%;
-      offset-rotate:0deg;
-      opacity:0;
-      transform: scale(1.0);
-    }
+  99% {
+    offset-distance: 100%;
+    offset-rotate:0deg;
+    opacity:0.99;
+    transform: scale(1.0);
   }
-  
-  @keyframes drop {
-    0% {
-        top:-1000px; 
-        opacity:1;
-    }
-    33% { top:550px; opacity:1; }
-    99% { opacity:1; top:550px; }
-    100% { opacity:0; top:550px; }
+  100% {
+    offset-distance: 100%;
+    offset-rotate:0deg;
+    opacity:0;
+    transform: scale(1.0);
   }
-  
-  .curve {
-       position:absolute;
-        top:50;
-        left:50;
+}
+
+@keyframes drop {
+  0% {
+   	top:-1000px; 
+    opacity:1;
   }
-  
-  .thrower {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
-    position:absolute;
-  }
+  33% { top:550px; opacity:1; }
+  99% { opacity:1; top:550px; }
+  100% { opacity:0; top:550px; }
+}
+
+.curve {
+ 	position:absolute;
+  	top:50;
+  	left:50;
+}
+
+.thrower {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position:absolute;
+}
