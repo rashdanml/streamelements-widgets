@@ -1,4 +1,4 @@
-let command, commands, cooldown, challenges, url = 0;
+let command, commands, cooldown, challenges, url, lastUsed = 0;
 
 function getRandom (min, max) {
   return Math.random() * (Number(max) - Number(min)) + Number(min);
@@ -37,6 +37,7 @@ window.addEventListener('onWidgetLoad', function (obj) {
   	duration = Number(fieldData["duration"]);
   	start = fieldData["startAt"].split(",");
   	end = fieldData["endAt"].split(",");
+  	cooldown = fieldData["cooldown"] * 1000;
   	profileUrl = fieldData["profileUrl"];
   
   	path = fieldData["path"];
@@ -63,6 +64,7 @@ window.addEventListener('onEventReceived', function (obj) {
   	const event = obj.detail.event;
   
   	if (listener == "message") {
+      	time = Date.now();
        	if (event.data.text.startsWith("!")) {
         	text = event.data.text.split(" ");
           	
@@ -80,13 +82,14 @@ window.addEventListener('onEventReceived', function (obj) {
               setImageUrl();
             }
 
-          	if (commandsTrigger.includes(command)) {
+          	if ( commandsTrigger.includes(command) && ((time - lastUsed) > cooldown) ) {
                 // randomize curvature of path
                 curveBy = "Q" + getRandom(start.x,end.x) + "," + getRandom(start.y,end.y);
                 path = 'path("'+startAt+curveBy+endAt+'")';
               	
                 setTimeout(reset_jail(),500);
               	setTimeout(reset_jailee(),500);
+          		  lastUsed = Date.now();
             }
         }
     }

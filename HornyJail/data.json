@@ -22,5 +22,6 @@
 	"endY": "700",
 	"delay": "500",
 	"jailImage": "https://cdn.streamelements.com/uploads/ba5ea0bc-72e0-4c48-8646-ca7387bcb357.png",
-	"profileUrl": "https://decapi.me/twitch/avatar/"
+	"profileUrl": "https://decapi.me/twitch/avatar/",
+	"cooldown": 10
 }
